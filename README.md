@@ -18,4 +18,4 @@ See also the list of [contributors](https://github.com/vuonglab/henna-and-phu-we
 
 # License
 
-This project is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENSE).
