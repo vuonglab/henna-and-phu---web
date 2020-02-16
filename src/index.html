@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Henna and Phu</title>
+
+    <script src='./moment.min.js'></script>
+    <script>
+      "use strict"
+
+      window.onload = function() {
+        var duration = document.getElementById("duration")
+
+        var marriageBegin = moment('2015-03-14 09:26:53-0700', 'YYYY-MM-DD HH:mm:ss')
+
+        var now = moment()
+        duration.innerHTML = moment.preciseDiff(now, marriageBegin)
+
+        var timerId = setInterval(function() {
+          now = moment()
+          duration.innerHTML = moment.preciseDiff(now, marriageBegin)
+        }, 1000)
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="duration"></h1>
+  </body>
+</html>
